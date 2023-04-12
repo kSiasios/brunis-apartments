@@ -1,0 +1,112 @@
+{
+  "rooms": {
+    "1": {
+      "floor": "1",
+      "double-beds": "2",
+      "normal-beds": "0",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "front"
+    },
+    "3": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "0",
+      "bunk-beds": "1",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "corner"
+    },
+    "4": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "1",
+      "subrooms": "1",
+      "view": "back"
+    },
+    "5": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "back"
+    },
+    "6": {
+      "floor": "2",
+      "double-beds": "2",
+      "normal-beds": "0",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "front"
+    },
+    "7": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "front"
+    },
+    "8": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "0",
+      "bunk-beds": "1",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "corner"
+    },
+    "9": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "1",
+      "subrooms": "1",
+      "view": "back"
+    },
+    "10": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "back"
+    },
+    "11": {
+      "floor": "3",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1",
+      "view": "corner"
+    },
+    "11A": {
+      "floor": "3",
+      "double-beds": "2",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "2",
+      "view": "front"
+    },
+    "11B": {
+      "floor": "3",
+      "double-beds": "2",
+      "normal-beds": "2",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "2",
+      "view": "back"
+    }
+  }
+}

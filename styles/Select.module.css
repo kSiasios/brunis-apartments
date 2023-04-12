@@ -1,0 +1,20 @@
+.loopokrator_select {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--input-padding);
+  border: var(--border-thickness) solid var(--faded-clr);
+  border-radius: 100vh;
+  background: var(--bg-clr);
+  cursor: pointer;
+  color: var(--primary-clr);
+  z-index: 998;
+  position: relative;
+  font-size: 1em;
+}
+
+.loopokrator_select p {
+  /* color: var(); */
+  margin: 0;
+}

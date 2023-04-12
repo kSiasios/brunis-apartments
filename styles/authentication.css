@@ -1,0 +1,138 @@
+.authentication-container {
+  padding-inline: var(--side-margins);
+  margin-block-start: 5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome-message {
+  font-weight: bold;
+  font-size: 6em;
+  color: var(--text-clr);
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+}
+
+.right-side {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  color: var(--text-clr);
+}
+
+form input {
+  width: 100%;
+}
+
+form button {
+  width: 30%;
+}
+
+.flourish-container {
+  position: fixed;
+  /* border: 2px solid green; */
+  top: calc(var(--border-thickness));
+  left: max(
+    0%,
+    calc(50% - (720px + var(--page-content-margin)) + var(--border-thickness))
+  );
+  height: 100vh;
+  width: min(100%, calc(1440px - 2 * var(--border-thickness)));
+  overflow: hidden;
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.flourish-thats-me {
+  /* background-image: url("../public/thats_me.svg"); */
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 10%;
+  bottom: 55%;
+  display: none;
+}
+
+.link-text {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: fit-content;
+  font-size: inherit;
+  text-decoration: underline;
+  margin-inline: 0.5em;
+  transition: var(--transition);
+}
+
+.link-text:hover,
+.link-text:focus {
+  color: var(--primary-clr);
+}
+
+#register-form {
+  display: none;
+}
+
+#register-form .welcome-message {
+  font-size: 4em;
+  /* transform: translateY(-20%); */
+  margin-block: 1em;
+}
+
+/* .welcome-message {
+  margin-block: 1em;
+} */
+
+.welcome-message .logo-container {
+  /* aspect-ratio: 60 / 14 !important; */
+  /* width: 10em; */
+  height: 1em;
+  margin-block-start: 1em;
+  /* height: auto; */
+  position: relative;
+}
+
+.welcome-message .logo-container .logo {
+  /* width: auto; */
+  /* transform: scale(5em); */
+  aspect-ratio: 60 / 14 !important;
+  height: 4em;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+#me-container[data-show="true"] .flourish-ball-transparent.medium.second {
+  /* background-image: url("../public/images/profile-image.jpg"); */
+  background-position: 50% 50%;
+  opacity: 1;
+  background-size: contain;
+  filter: saturate(0);
+}
+
+#me-container[data-show="true"] .flourish-thats-me {
+  display: block;
+}
+
+/* @media screen and (min-width: 1440px) {
+  .flourish-container {
+    border-radius: var(--page-content-br);
+    height: calc(
+      100vh - 2 * var(--page-content-margin) - 2 * var(--border-thickness)
+    );
+    margin: var(--page-content-margin);
+  }
+} */

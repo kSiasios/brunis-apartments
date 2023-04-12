@@ -1,0 +1,100 @@
+{
+  "rooms": {
+    "1": {
+      "floor": "1",
+      "double-beds": "2",
+      "normal-beds": "0",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "3": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "0",
+      "bunk-beds": "1",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "4": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "1",
+      "subrooms": "1"
+    },
+    "5": {
+      "floor": "1",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "6": {
+      "floor": "2",
+      "double-beds": "2",
+      "normal-beds": "0",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "7": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "8": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "0",
+      "bunk-beds": "1",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "9": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "1",
+      "subrooms": "1"
+    },
+    "10": {
+      "floor": "2",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "11": {
+      "floor": "3",
+      "double-beds": "1",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "1"
+    },
+    "11A": {
+      "floor": "3",
+      "double-beds": "2",
+      "normal-beds": "1",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "2"
+    },
+    "11B": {
+      "floor": "3",
+      "double-beds": "2",
+      "normal-beds": "2",
+      "bunk-beds": "0",
+      "extra-beds": "0",
+      "subrooms": "2"
+    }
+  }
+}

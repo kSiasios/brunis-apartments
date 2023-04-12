@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  gap: var(--content-gap);
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin-block: 2em;
+  padding-inline: var(--side-margins);
+  justify-content: flex-start;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* overflow: scroll; */
+}
+
+.article_card_container {
+  display: flex;
+  position: relative;
+  /* width: calc(33.3% - var(--content-gap) + (var(--content-gap) / 3)); */
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 1120px) {
+  .article_card_container {
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+  }
+}
