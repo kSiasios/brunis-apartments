@@ -288,7 +288,7 @@ main {
 div.logo {
   /* background: url("../public/logo.svg"); */
   /* position: absolute; */
-  background-image: url("../public/logo.svg");
+  background-image: url("/logo.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
