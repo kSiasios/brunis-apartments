@@ -2,9 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-// import { AiFillEye } from "react-icons/ai";
 import {
-  // FaShareAlt,
   FaClock,
   FaPaw,
   FaBroom,
@@ -12,7 +10,6 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { BsTelephoneFill } from "react-icons/bs";
-import { useEffect } from "react";
 import Footer from "../components/Footer";
 import { useIntl } from "react-intl";
 
