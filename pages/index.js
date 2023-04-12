@@ -59,7 +59,7 @@ export default function Home() {
               {/* </p> */}
             </div>
             <div className="content">
-              <a className="cta-btn" href="/routes/articles">
+              <a className="cta-btn" href="/#contact">
                 {f({ id: "call-to-action" })}
               </a>
             </div>
