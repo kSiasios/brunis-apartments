@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import "../styles/navbar.css";
-import "../styles/authentication.css";
+// import "../styles/authentication.css";
 
 import enFile from "../public/lang/en.json";
 import elFile from "../public/lang/el.json";
