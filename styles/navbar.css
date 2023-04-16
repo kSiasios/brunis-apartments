@@ -14,8 +14,7 @@ nav {
 .hamburger {
   position: relative;
   /* position: fixed; */
-  width: 50px;
-  height: 50px;
+
   cursor: pointer;
   border: 0;
   background: transparent;
@@ -23,6 +22,12 @@ nav {
   margin-inline: var(--side-margins);
   margin-block: 0.5em;
   pointer-events: all;
+
+  min-width: 16px;
+  width: 2rem;
+  /* height: 50px; */
+  max-width: 50px;
+  aspect-ratio: 1;
 }
 
 .hamburger::before,
@@ -38,12 +43,25 @@ nav {
 
 .hamburger::before {
   top: 35%;
+  /* top: 0.7rem; */
+  /* top: calc(50% + 5px); */
   width: 70%;
 }
 
 .hamburger::after {
   bottom: 35%;
+  /* bottom: 0.7rem; */
+  /* top: calc(50% + 5px);
+  bottom: calc(50% - 5px); */
+
   width: 40%;
+}
+
+.hamburger:hover::before,
+.hamburger:focus::before,
+.hamburger:hover::after,
+.hamburger:focus::after {
+  background: var(--primary-clr);
 }
 
 nav[data-is-open="false"] {
@@ -121,6 +139,7 @@ nav[data-is-open="true"] .hamburger::after {
 
 nav[data-is-open="true"] #menu {
   pointer-events: all;
+  min-width: 150px;
   width: 15em;
 }
 
@@ -147,7 +166,7 @@ li {
   /* text-align: right; */
   /* text-align: right; */
   color: var(--text-clr);
-  font-size: 24px;
+  /* font-size: 24px; */
   padding: 0.5em 1em;
   padding-inline: 0;
   width: 0%;
@@ -155,6 +174,7 @@ li {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  font-size: clamp(16px, 1.5rem, 24px);
 }
 
 nav[data-is-open="true"] .nav-link {
@@ -237,6 +257,7 @@ nav[data-is-open="true"] .nav-link {
 .dropdown-content a {
   text-decoration: underline;
   pointer-events: all;
+  padding: 0.5rem;
 }
 
 .language-selector {
@@ -247,11 +268,17 @@ nav[data-is-open="true"] .nav-link {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
+
+  border: 0;
+  background: none;
 }
 
-.language-selector:hover {
+.language-selector:hover,
+.language-selector:focus {
   cursor: pointer;
 }
-.language-selector:hover .dropdown-content {
+.language-selector:hover .dropdown-content,
+.language-selector:focus .dropdown-content {
   display: flex !important;
 }

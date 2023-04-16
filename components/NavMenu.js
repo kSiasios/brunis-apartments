@@ -7,6 +7,7 @@ import { MdLanguage } from "react-icons/md";
 export default function NavMenu(props) {
   const { formatMessage: f } = useIntl();
   const { locale } = useRouter();
+  const router = useRouter();
 
   // console.log(locale);
 
@@ -15,13 +16,18 @@ export default function NavMenu(props) {
       <Link href="/" className="logo-link">
         <div className="logo"></div>
       </Link>
-      <div className="language-selector">
+      <div></div>
+      <button className="language-selector">
         <MdLanguage />
         <div className="dropdown-content">
-          <a href="/en">English</a>
-          <a href="/el">Ελληνικά</a>
+          <a href={`/en${router.asPath != "/" ? router.asPath : ""}`}>
+            English
+          </a>
+          <a href={`/el${router.asPath != "/" ? router.asPath : ""}`}>
+            Ελληνικά
+          </a>
         </div>
-      </div>
+      </button>
       <Hamburger menuTogglerFunction={props.menuTogglerFunction} />
       <div id="menu">
         <div className="nav-links">

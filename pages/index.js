@@ -92,7 +92,8 @@ export default function Home() {
             </div>
             <div className="section-content">
               <div className="image">
-                <img src="/room.jpg" loading="lazy"></img>
+                {/* <img src="/room.jpg" loading="lazy"></img> */}
+                <img src="/central_rooms.jpg" loading="lazy"></img>
               </div>
               <div className="description">
                 {f({ id: "rooms-description" })}
