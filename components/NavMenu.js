@@ -43,7 +43,11 @@ export default function NavMenu(props) {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" href="/#contact">
+              <Link
+                className="nav-link"
+                href="/#contact"
+                onClick={props.menuTogglerFunction}
+              >
                 {f({ id: "contact" })}
               </Link>
             </li>
