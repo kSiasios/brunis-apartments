@@ -13,9 +13,10 @@ export default function NavMenu(props) {
 
   return (
     <div id="menu-container">
-      <Link href="/" className="logo-link">
+      <Hamburger menuTogglerFunction={props.menuTogglerFunction} />
+      {/* <Link href="/" className="logo-link">
         <div className="logo"></div>
-      </Link>
+      </Link> */}
       <div></div>
       <button className="language-selector">
         <MdLanguage />
@@ -28,7 +29,7 @@ export default function NavMenu(props) {
           </a>
         </div>
       </button>
-      <Hamburger menuTogglerFunction={props.menuTogglerFunction} />
+      {/* <Hamburger menuTogglerFunction={props.menuTogglerFunction} /> */}
       <div id="menu">
         <div className="nav-links">
           <ul>

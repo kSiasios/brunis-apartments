@@ -9,6 +9,8 @@ nav {
   height: 4em;
 
   z-index: 999;
+
+  min-height: 48px;
 }
 
 .hamburger {
@@ -23,10 +25,12 @@ nav {
   margin-block: 0.5em;
   pointer-events: all;
 
-  min-width: 16px;
+  /* min-width: 16px; */
+  min-width: 27px;
   width: 2rem;
   /* height: 50px; */
-  max-width: 50px;
+  /* max-width: 50px; */
+  max-width: 80px;
   aspect-ratio: 1;
 }
 
@@ -35,16 +39,16 @@ nav {
   content: "";
   position: absolute;
   background: var(--text-clr);
-  height: 3px;
+  height: 5px;
   width: 100%;
-  right: 0;
+  left: 0;
   transition: all 0.3s ease-in-out;
 }
 
 .hamburger::before {
   /* top: 35%; */
   /* top: 0.7rem; */
-  top: calc(50% - 5px);
+  top: calc(50% - 8px);
   width: 70%;
 }
 
@@ -52,7 +56,7 @@ nav {
   /* bottom: 35%; */
   /* bottom: 0.7rem; */
   /* top: calc(50% + 5px); */
-  bottom: calc(50% - 5px);
+  bottom: calc(50% - 8px);
 
   width: 40%;
 }
@@ -71,12 +75,12 @@ nav[data-is-open="false"] {
 nav[data-is-open="true"] .hamburger::before {
   width: 100%;
   transform: rotate(45deg);
-  top: calc(50% - 1.5px);
+  top: calc(50% - 2.5px);
 }
 nav[data-is-open="true"] .hamburger::after {
   width: 100%;
   transform: rotate(-45deg);
-  bottom: calc(50% - 1.5px);
+  bottom: calc(50% - 2.5px);
 }
 
 .theme-changer {
@@ -250,6 +254,7 @@ nav[data-is-open="true"] .nav-link {
   display: none;
   flex-direction: column;
   /* background: red; */
+  background: white;
   padding: 0.5rem;
   left: 50%;
   transform: translateX(-50%);

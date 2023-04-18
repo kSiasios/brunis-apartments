@@ -52,6 +52,8 @@ export default function Home() {
         <div className="page-content">
           <Navbar />
           <section className="cta-section">
+            <div className="logo"></div>
+
             <div className="welcome-message">
               {/* <p className="welcome-message-text"> */}
               <span className="important-text">Brunis</span>
@@ -71,17 +73,29 @@ export default function Home() {
               {/* </p> */}
             </div>
             <div className="section-content">
-              <div className="map">
+              {/* <div className="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.461088380263!2d22.652553314790065!3d39.97580009026245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7f53d3a3a8c9d%3A0x640f4079d40f3435!2sBRUNIS%20APARTMENTS!5e0!3m2!1sel!2sgr!4v1680941170726!5m2!1sel!2sgr"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
+              </div> */}
+              <div className="image">
+                {/* <img src="/room.jpg" loading="lazy"></img> */}
+                <img src="/building.jpg" loading="lazy"></img>
               </div>
               <div className="description">
                 {f({ id: "resort-description" })}
               </div>
+            </div>
+            <div className="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.461088380263!2d22.652553314790065!3d39.97580009026245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7f53d3a3a8c9d%3A0x640f4079d40f3435!2sBRUNIS%20APARTMENTS!5e0!3m2!1sel!2sgr!4v1680941170726!5m2!1sel!2sgr"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </section>
           <section className="rooms">
