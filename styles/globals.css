@@ -703,10 +703,13 @@ footer {
 
   width: 100%;
   max-width: 1440px;
+  padding: 3.5rem;
 }
 
 .footer-content {
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5em;

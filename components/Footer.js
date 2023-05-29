@@ -6,6 +6,9 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
+        <div className="license-number">
+          Αριθμός γνωστοποίησης: 1148195 (ver. 1)
+        </div>
         {/* <Logo /> */}
         {/* <span className="light-text"> */}
         Copyright &copy; {dt.getFullYear()}. All rights reserved. Designed and
