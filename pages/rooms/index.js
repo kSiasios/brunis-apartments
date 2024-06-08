@@ -1,14 +1,13 @@
-import { useIntl } from "react-intl";
-import { useRouter } from "next/router";
-import Navbar from "../../components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
+import { useIntl } from "react-intl";
+import Navbar from "../../components/Navbar";
 
 const data = require("../../public/rooms_info.json");
 
 export default function Rooms() {
   const { formatMessage: f } = useIntl();
-  const { locale } = useRouter();
+  // const { locale } = useRouter();
 
   console.log(data);
 
@@ -18,7 +17,7 @@ export default function Rooms() {
 
   for (let index = 0; index < roomNames.length; index++) {
     rooms.push(
-      <Link className="link" href={`/rooms/${roomNames[index]}`}>
+      <Link className="link" key={index} href={`/rooms/${roomNames[index]}`}>
         {f({ id: "room" })} {roomNames[index]}
       </Link>
     );
@@ -33,11 +32,7 @@ export default function Rooms() {
       <main data-theme="light">
         <div className="page-content">
           <Navbar />
-          <section className="rooms">
-            {/* <h3>List</h3> */}
-
-            {rooms}
-          </section>
+          <section className="rooms">{rooms}</section>
         </div>
       </main>
     </div>
